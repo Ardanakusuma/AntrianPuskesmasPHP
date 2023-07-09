@@ -1,0 +1,224 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	background: #c6dad0;
+}
+
+label {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 8px;
+}
+
+input[type=date],
+input[type=file],
+input[type=text],
+select {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 8px;
+	font-size: 16px;
+	box-sizing: border-box;
+	border: 1px solid #cccc;
+	border-radius: 4px;
+}
+
+.form-container-pasien,
+.form-container-antrian,
+.form-container-resepsionis,
+.form-container-dokter {
+	width: 100%;
+	background-color: #ffff;
+	border-radius: 12px;
+	padding: 20px;
+	text-align: center;
+}
+
+.form-container-antrian .form-column-antrian,
+.form-container-pasien .form-column-pasien,
+.form-container-resepsionis .form-column-resepsionis {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.form-container-antrian h1,
+.form-container-pasien h1,
+.form-container-resepsionis h1,
+.form-container-dokter h1 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.form-group-pasien input:focus,
+.form-group-pasien select:focus,
+.form-group-dokter input:focus,
+.form-group-dokter select:focus,
+.form-group-resepsionis input:focus,
+.form-group-resepsionis select:focus {
+	border-color: #469e6f;
+	outline: 0;
+}
+
+.form-container-pasien .form-group-pasien,
+.form-container-antrian .form-group-antrian,
+.form-container-resepsionis .form-group-resepsionis,
+.form-group-dokter,
+.form-group-pasien {
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.drop-title {
+	color: #444;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	transition: color 0.2s ease-in-out;
+}
+
+.btn-back-antrian,
+.btn-back-dokter,
+.btn-back-pasien,
+.btn-back-resepsionis {
+	color: #234234;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+input[type=date]:hover,
+input[type=file]:hover,
+select[type=text]:hover {
+	background: #f3f6f9;
+	cursor: pointer;
+}
+
+.form-container-antrian button,
+.form-container-dokter button,
+.form-container-pasien button,
+.form-container-resepsionis button {
+	margin-top: 30px;
+	padding: 10px 20px;
+	background-color: #469e6f;
+	color: #ffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.form-container-antrian button:hover,
+.form-container-dokter button:hover,
+.form-container-pasien button:hover,
+.form-container-resepsionis button:hover {
+	background-color: #3bae79;
+}
+
+.form-container-antrian .reset-button-antrian,
+.form-container-dokter .reset-button-dokter,
+.form-container-pasien .reset-button-pasien,
+.form-container-resepsionis .reset-button-resepsionis {
+	float: right;
+	margin-left: 10px;
+	background-color: #db2323;
+}
+
+.form-container-antrian .reset-button-antrian:hover,
+.form-container-dokter .reset-button-dokter:hover,
+.form-container-pasien .reset-button-pasien:hover,
+.form-container-resepsionis .reset-button-resepsionis:hover {
+	background-color: #e66565;
+}
+
+.form-actions-dokter,
+.form-container-antrian .form-actions-antrian,
+.form-container-pasien .form-actions-pasien,
+.form-container-resepsionis .form-actions-resepsionis {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.form-container-pasien .form-actions-pasien button {
+	margin: 0 5px;
+}
+
+.btn-back-pasien {
+	display: inline-block;
+	margin: 35px;
+}
+
+.btn-back-antrian::before,
+.btn-back-dokter::before,
+.btn-back-pasien::before,
+.btn-back-resepsionis::before {
+	content: "\2190";
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.form-container-dokter,
+.form-container-resepsionis {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.form-group-antrian input:focus,
+.form-group-antrian select:focus,
+.form-group-dokter input:focus,
+.form-group-dokter select:focus,
+.form-group-resepsionis input:focus,
+.form-group-resepsionis select:focus {
+	border-color: #469e6f;
+	outline: 0;
+	border-width: 1px;
+}
+
+.form-container-dokter .reset-button-dokter {
+	color: #fff;
+}
+
+.form-actions-dokter button,
+.form-container-antrian .form-actions-antrian button,
+.form-container-resepsionis .form-actions-resepsionis button {
+	margin: 5px;
+}
+
+.btn-back-dokter,
+.btn-back-resepsionis {
+	margin-right: 115px;
+}
+
+.form-container-antrian {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+input[type=text]:hover {
+	background: #f3f6f9;
+}
+
+.btn-back-antrian {
+	margin-right: 315px;
+}
+
+.form-container-pasien {
+	max-width: 800px;
+	margin: 0 auto;
+}
