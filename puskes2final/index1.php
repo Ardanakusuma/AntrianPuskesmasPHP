@@ -273,7 +273,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <th>Berobat</th>
                             <th>Status</th>
                             <th>Waktu</th>
-                            <?php if ($role == '1') { ?>
+                            <?php if ($role == '1' || $role == '2') { ?>
                                 <th>Opsi</th>
                             <?php } ?>
                         </tr>
