@@ -1,5 +1,7 @@
 CREATE DATABASE antri;
 
+USE antri
+
 CREATE TABLE Dokter (
   ID_Dokter INT PRIMARY KEY AUTO_INCREMENT,
   Nama_D VARCHAR(50),
